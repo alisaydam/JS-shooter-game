@@ -96,7 +96,7 @@ class Expolosion {
     this.y = y;
     this.frame = 0;
     this.sound = new Audio();
-    this.sound.src = "boom.wav";
+    this.sound.src = "boom.mp3";
     this.timeSinceLastFrame = 0;
     this.frameInterval = 200;
     this.markedForDeletion = false;
