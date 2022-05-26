@@ -3,6 +3,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: crosshair;
 }
 
 canvas {
@@ -15,4 +16,16 @@ canvas {
 
 #collisionCanvas {
   opacity: 0;
+}
+button {
+  background: none;
+  font-size: 50px;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid white;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
 }

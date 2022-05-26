@@ -173,6 +173,13 @@ function drawGameOver() {
     canvas.width / 2 + 5,
     canvas.height / 2 + 5
   );
+ const button = document.createElement("button");
+ button.innerText = "Restart";
+ document.body.appendChild(button);
+ button.addEventListener("click", () => {
+   document.location.reload();
+ });
+  
 }
 window.addEventListener("click", (e) => {
   const detectPixelColor = collisionCtx.getImageData(e.x, e.y, 1, 1);
